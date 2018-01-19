@@ -16,12 +16,12 @@ var btn1 = $('#bouton1'), btn2 = $('#bouton2'), btn3 = $('#bouton3'), btn4 = $('
 
 btn1.on('click', function() {
 	//Color=Vert
-	rec.style("color: green ");
+	rec.css("background-color", "green");
 });
 
 btn2.on('click', function() {
 	//Color=#356188
-	rec.style("color: #356188");
+	rec.css("background-color", "#356188");
 });
 
 btn3.on('click', function() {
