@@ -35,8 +35,13 @@ btn4.on('click', function() {
 });
 
 btn5.on('click', function() {
-	//+10px
-	rec.width()
+	//+10px IF >100px == 10px
+	var hg = rec.height()
+	if (hg < 100) {
+		rec.css("height", hg + 10);
+	} else {
+		rec.css("height", 10);
+	}
 });
 
 
