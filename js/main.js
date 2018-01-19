@@ -11,34 +11,37 @@ Bouton 5 : augmente la hauteur de 10px, s'il dépasse 100px, il remet la hauteur
 //On sélectionne le rectangle
 var rec = $('#rectangle');
 //On sélectionne les boutons
-var btn1 = $('bouton1'), btn2 =$('bouton2'), btn3 =$('bouton3'), btn4 =$('bouton4'), btn5 =$('bouton5')
+var btn1 = $('#bouton1'), btn2 = $('#bouton2'), btn3 = $('#bouton3'), btn4 = $('#bouton4'), btn5 =$('#bouton5')
 
 
 btn1.on('click', function() {
-//Color=Vert
+	//Color=Vert
+	rec.style("color: green ");
+});
 
-}
 btn2.on('click', function() {
-//Color=#356188
-	
-}
+	//Color=#356188
+	rec.style("color: #356188");
+});
+
 btn3.on('click', function() {
-//Disparaître
-	
-}
+	//Disparaître
+	rec.hide();
+});
+
 btn4.on('click', function() {
-//Apparaître
-	
-}
+	//Apparaître
+	rec.show();
+});
+
 btn5.on('click', function() {
-//+10px
-	
-}
+	//+10px
+	rec.width()
+});
 
 
 /*
 
-.show() //Apparaître
-.hide() //Disparaître
-.width ()
+
+
 */
